@@ -1,0 +1,20 @@
+<div class="p-8">
+    <mat-card>
+        <div class="flex items-center mb-8">
+            <div class="w-24 h-24 rounded-full shadow-md mr-4">
+                <img [src]="pokemon?.sprites?.front_default"/>
+            </div>
+            <h1 class="my-4">{{pokemon.name}}</h1>
+        </div>
+        <div class="ml-32">
+            <div class="mb-8">
+                <label>Moves: </label>
+                <span>{{pokemon?.moves?.length}}</span>
+            </div>
+            <div>
+                <label>Weight: </label>
+                <span>{{pokemon?.weight}}</span>
+            </div>
+        </div>
+    </mat-card>
+</div>
